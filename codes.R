@@ -6,3 +6,18 @@ View (houses)
 which(is.na(houses))
 
 na.omit(houses)
+
+
+##B##
+summary(houses$TotalUSD)
+summary(houses$SqM_Building)
+summary(houses$SqM_Land)
+summary(houses$Year)
+summary(houses$Baths)
+
+
+library(PerformanceAnalytics)
+chart.Correlation(houses, histogram = TRUE,na.rm =TRUE)
+
+sum((houses$TotalUSD), na.rm = TRUE)
+    
