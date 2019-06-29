@@ -17,7 +17,11 @@ summary(houses$Baths)
 
 
 library(PerformanceAnalytics)
-chart.Correlation(houses, histogram = TRUE,na.rm =TRUE)
+chart.Correlation(houses,pairs={1:5})
 
-sum((houses$TotalUSD), na.rm = TRUE)
-    
+
+##Γ##
+shapiro.test(houses$TotalUSD)
+shapiro.test(houses$SqM_Building)
+shapiro.test(houses$SqM_Land)
+
