@@ -37,3 +37,11 @@ boxplot((log10(houses$TotalUSD))~houses$Fireplace)
 AN = aov(log10(houses$TotalUSD)~houses$Fireplace)
 summary(AN)
 AN$coef
+
+
+##E##
+LM<-lm((log10(houses$TotalUSD))~houses$Fireplace)
+summary(LM)
+step(LM,direction = 'both')
+
+##ΣΤ##
