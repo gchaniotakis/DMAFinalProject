@@ -26,3 +26,6 @@ shapiro.test(houses$TotalUSD)
 shapiro.test(houses$SqM_Building)
 shapiro.test(houses$SqM_Land)
 
+shapiro.test(log10(houses$TotalUSD))
+shapiro.test(log10(houses$SqM_Building))
+shapiro.test(log10(houses$SqM_Land))
