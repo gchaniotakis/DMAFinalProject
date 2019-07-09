@@ -29,3 +29,11 @@ shapiro.test(houses$SqM_Land)
 shapiro.test(log10(houses$TotalUSD))
 shapiro.test(log10(houses$SqM_Building))
 shapiro.test(log10(houses$SqM_Land))
+
+
+##Δ##
+boxplot((log10(houses$TotalUSD))~houses$Fireplace)
+
+AN = aov(log10(houses$TotalUSD)~houses$Fireplace)
+summary(AN)
+AN$coef
