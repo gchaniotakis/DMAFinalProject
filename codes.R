@@ -17,7 +17,8 @@ summary(houses$Baths)
 
 
 library(PerformanceAnalytics)
-chart.Correlation(houses,pairs={1:5})
+w<-data.frame(houses$TotalUSD, houses$SqM_Building,houses$SqM_Land,houses$Year,houses$Baths)
+chart.Correlation(w)
 
 
 ##Γ##
